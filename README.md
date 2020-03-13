@@ -40,4 +40,4 @@ Spring Boot API 是一个基于Spring Boot & MyBatis plus的种子项目，用�
 其他
 
 ## License
-纯粹开源分享，感谢大家 [Star](https://github.com/aitangbao/springboot-api) 的支持。
+纯粹开源分享，感谢大家 [Star](https://github.com/aitangbao/springboot-api-v2) 的支持。
