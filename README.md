@@ -28,11 +28,10 @@ Spring Boot API 是一个基于Spring Boot & MyBatis plus的种子项目，用�
 - 建议业务失败直接使用ServiceException("ErrorMessage")抛出，由统一异常处理器来封装业务失败的响应结果，会直接被封装为{"code":400,"message":"ErrorMessage"}返回，尽情抛出；body方式传参，@Valid校验Model，更无需自己处理；
 
 ## 接口文档效果图
-
 ![image-20200313084433855](http://tuchuang.aitangbao.com.cn/image-20200313084433855.png)
 
 ## 相关文档
-- Spring Boot（查看Spring Boot学习&使用指南）
+- Spring Boot（[springboot官方](https://spring.io/projects/spring-boot/)）
 - MyBatis-Plus ([查看官方中文文档](https://mp.baomidou.com/guide/))
 - MyBatis-Plus分页插件（[查看官方中文文档](https://mp.baomidou.com/guide/page.html)）
 - Druid Spring Boot Starter（[查看官方中文文档](https://github.com/alibaba/druid/tree/master/druid-spring-boot-starter/)）
