@@ -43,7 +43,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         //token为空返回
         if (StringUtils.isBlank(token)) {
             Result result = new Result();
-            result.setCode(ResultCode.UNAUTHORIZED).setMessage("token不能为空");
+            result.setCode(ResultCode.UNAUTHORIZED).setMessage("token不能为空").setSuccess(false);
             responseResult(response, result);
             return false;
         }//  校验并解析token，如果token过期或者篡改，则会返回null
@@ -52,7 +52,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
             return true;
         } else {
             Result result = new Result();
-            result.setCode(ResultCode.UNAUTHORIZED).setMessage("用户未登陆!");
+            result.setCode(ResultCode.UNAUTHORIZED).setMessage("用户未登陆!").setSuccess(false);
             responseResult(response, result);
             return false;
         }
