@@ -139,7 +139,6 @@ public class WebMvcConfigurer extends WebMvcConfigurerAdapter {
     private void responseResult(HttpServletResponse response, Result result) {
         response.setCharacterEncoding("UTF-8");
         response.setHeader("Content-type", "application/json;charset=UTF-8");
-        response.setStatus(200);
         try {
             response.getWriter().write(JSON.toJSONString(result));
         } catch (IOException ex) {
